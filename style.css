@@ -1,0 +1,158 @@
+body{
+    background-color: #090b1a;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    padding: 100px 120px 100px 120px;
+    border-radius: 10px;
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.card{
+    width: 95%;
+    display: flex;
+    border-radius: 10px;
+    background-color: #1b1938;  
+}
+
+.image{
+    background-image: url(images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height:100%;
+    opacity: 0.5;
+    background-size:100% 100%;
+    border-radius: 0 10px 10px 0;
+}
+
+.mask{
+    width: 100%;
+    height: 100%;
+    background-color: #5e0090;
+    border-radius: 0 10px 10px 0;
+}
+
+.text{
+    padding: 90px 90px 90px 70px;
+    text-align: left;
+}
+
+header{
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+span{
+    color: #5c77db;
+}
+
+.info{
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    opacity: 0.75;
+}
+
+.stats{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.num{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.cm{
+    font-weight: 200;
+    font-size: 12px;
+    opacity: 0.6; 
+}
+
+.attribution {
+  position: absolute;
+  bottom: 32px;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.attribution a {
+  color: #5c77db;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  body {
+     height: 100%;
+     min-height: 956px;
+}
+    
+.card{
+    width: 90%;
+    max-width: none;
+    height: 780px;
+    flex-direction:column-reverse;
+}
+
+.image{
+    width: 100%;
+    flex-shrink: 0;
+    background-image: url("./images/image-header-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.mask{
+    background-color: #5e0090;
+    border-radius: 10px 10px 0px 0px;
+}
+  
+.text{
+    padding: 5px;
+    text-align: center;
+    }
+    
+header{
+    font-family: 'Inter',sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+  
+.info{
+    margin-top: 16px;
+    align-self: center;
+    font-size: 12px;
+}
+    
+.stats{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+    
+.num{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.cm{
+    font-weight: 200;
+    font-size: 12px;
+    opacity: 0.6; 
+}
+
+.attribution {
+  display: none;
+}
